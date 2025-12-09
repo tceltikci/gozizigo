@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Main App Theme (works everywhere) -->
+    <style name="Theme.GoZizigo" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Customize status bar, nav bar, etc. later -->
+    </style>
+
+    <!-- Splash Screen Theme (Android 12+) -->
+    <style name="Theme.GoZizigo.Splash" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">#FFFFFF</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_gozizigo_foreground</item>
+        <item name="postSplashScreenTheme">@style/Theme.GoZizigo</item>
+    </style>
+
+</resources>

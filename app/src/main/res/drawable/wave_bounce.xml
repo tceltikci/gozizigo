@@ -1,0 +1,25 @@
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:drawable="@drawable/wave_static">
+
+    <target android:name="wave">
+        <aapt:attr name="android:animation">
+            <set
+                android:ordering="sequentially">
+
+                <objectAnimator
+                    android:propertyName="pathData"
+                    android:duration="600"
+                    android:valueFrom="
+                        M20,80 L50,40 L80,80 L110,40 L140,80 L170,40 L200,80"
+                    android:valueTo="
+                        M20,60 L50,20 L80,60 L110,20 L140,60 L170,20 L200,60"
+                    android:valueType="pathType"
+                    android:repeatCount="infinite"
+                    android:repeatMode="reverse" />
+
+            </set>
+        </aapt:attr>
+    </target>
+
+</animated-vector>

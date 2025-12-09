@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <!-- Logo Wave -->
+    <ImageView
+        android:id="@+id/imgWave"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:src="@drawable/ic_gozizigo_foreground" />
+
+    <!-- Text -->
+    <TextView
+        android:id="@+id/tvPrompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgWave"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Say something..."
+        android:textColor="#1A1F36"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-medium"/>
+
+    <!-- MIC BUTTON -->
+    <RelativeLayout
+        android:id="@+id/btnMic"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/mic_bg"
+        android:padding="22dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@android:drawable/ic_btn_speak_now"
+            android:tint="#FFFFFF"/>
+    </RelativeLayout>
+
+</RelativeLayout>
